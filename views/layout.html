@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>{{=T('menu.application title')}}</title>
+
+    <meta name="application-name" content="{{=T('menu.application title')}}"/>
+    <link rel="SHORTCUT ICON" href="{{=URL('static','favicon.ico')}}" type="image/x-icon">
+    <link href="{{=URL('static', 'reportbro/ext/spectrum.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{=URL('static', 'reportbro/reportbro.css')}}" rel="stylesheet" type="text/css"/>
+
+    <script src="{{=URL('static', 'reportbro/ext/jquery.js')}}"></script>
+    <script src="{{=URL('static', 'reportbro/ext/autosize.js')}}"></script>
+    <script src="{{=URL('static', 'reportbro/ext/JsBarcode.all.min.js')}}"></script>
+    <script src="{{=URL('static', 'reportbro/ext/spectrum.js')}}"></script>
+    <script src="{{=URL('static', 'reportbro/reportbro.js')}}"></script>
+    <script src="{{=URL('static','js/knockout-3.5.1.min.js')}}"></script>
+
+    <link href="{{=URL('static','_1.0.0/css/styles.css')}}" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                {{for menu_item in menu_items:}}
+                    <a href="{{=menu_item['url']}}" id="{{=menu_item['id']}}" class="{{=menu_item['class']}}">
+                        {{=menu_item['label']}}
+                    </a>
+                {{pass}}
+            </nav>
+        </header>
+
+        <!-- Content Wrapper -->
+        <div id="content">
+            {{include}}
+        </div>
+        <!-- /Content Wrapper -->
+    </div>
+<!-- container -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+{
+'album.add': 'add album',
+'album.albums': 'Albums',
+'album.artist': 'Artist',
+'album.best_of_compilation': 'Best-of',
+'album.edit album': 'Edit album',
+'album.filter by year': 'Filter by year',
+'album.name': 'Album Name',
+'album.pdf report': 'download',
+'album.year': 'Year',
+'common.cancel': 'cancel',
+'common.retrieving data failed': 'Retrieving data failed',
+'common.save': 'save',
+'common.saving failed': 'Saving failed',
+'error.the field must contain a number': 'The field must contain a number',
+'error.the field must contain a valid year': 'The field must contain a valid year',
+'error.the field must not be empty': 'The field must not be empty',
+'menu.albums': 'Albums',
+'menu.application title': 'ReportBro Demo Application',
+'menu.report': 'Report',
+}
