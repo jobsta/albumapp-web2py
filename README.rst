@@ -8,6 +8,11 @@ The application is a simple web app and allows to manage a list of music albums.
 ReportBro Designer is included so you can modify a template which is used
 when you print a pdf of all your albums.
 
+The Demo App is also avaiable for the `Django <https://www.djangoproject.com/>`_
+and `Flask <https://palletsprojects.com/p/flask/>`_ web frameworks. See
+`Album App for Django <https://github.com/jobsta/albumapp-django.git>`_ and
+`Album App for Flask <https://github.com/jobsta/albumapp-flask.git>`_ respectively.
+
 All Instructions in this file are for a Linux/Mac shell but the commands should
 be easy to adapt for Windows.
 
@@ -23,20 +28,20 @@ Change into web2py applications directory:
 
     $ cd web2py/applications
 
-Clone git repository:
+Clone the git repository:
 
 .. code:: shell
 
     $ git clone https://github.com/jobsta/albumapp-web2py.git albums
 
-Create virtual environment in web2py root directory:
+Create a virtual environment in web2py root directory called env:
 
 .. code:: shell
 
     $ cd ..
     $ python3 -m venv env
 
-Activate virtual environment:
+Activate the virtual environment:
 
 .. code:: shell
 
@@ -57,13 +62,13 @@ are automatically created by web2py.
 Run App
 -------
 
-Activate virtual environment (if not already active):
+Activate the virtual environment (if not already active):
 
 .. code:: shell
 
     $ . env/bin/activate
 
-Start web2py webserver (with default password for admin console):
+Start the web2py webserver (with default password for admin console):
 
 .. code:: shell
 
